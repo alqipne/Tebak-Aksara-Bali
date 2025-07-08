@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Tebak Aksara Bali</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tebak Aksara Bali</h1>
+    <div id="game-screen">
+      <p class="question-text">Sesi <span id="current-session">1</span> dari <span id="total-sessions">18</span></p>
+      <div class="aksara-display" id="aksara-display"></div>
+      <div class="choices-container" id="choices-container"></div>
+      <p id="feedback-message" class="feedback"></p>
+    </div>
+
+    <div id="score-screen" class="hidden">
+      <h2>Game Selesai!</h2>
+      <p class="final-score">Skor Anda: <span id="final-score">0</span> / <span id="max-score">18</span></p>
+      <p class="final-score-percentage">Persentase: <span id="score-percentage">0%</span></p>
+      <p id="score-message"></p>
+      <button id="restart-button">Main Lagi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
